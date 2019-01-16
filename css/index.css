@@ -1,0 +1,121 @@
+:root {
+  --mainColor: #00cdcd;
+  --darkColor: #00b3b3;
+  --darkerColor:  #037777;
+  --lightColor: rgb(243, 243, 242);
+}
+
+body {
+  background: var(--lightColor);
+}
+.text-platzi {
+  color: var(--mainColor)!important;
+}
+
+#header img {
+  width: 5em;
+}
+
+#main .carousel-inner .videoHTML {
+  max-height: 80vh;
+  object-fit: cover;
+  /* filter: brightness(10%); */
+}
+
+
+#carousel{
+  position: relative;
+  overflow:hidden;
+}
+
+/* .videoHTML {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height:100%;
+
+} */
+
+.videoHTML-item {
+  width: 100%;
+  height: auto;
+}
+
+
+
+#carousel .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 2;
+}
+
+#carousel .overlay .container, #carousel .overlay .row {
+  height: 100%;
+}
+
+.btn-platzi{
+  background-color: var(--darkColor);
+  color: white;
+}
+
+.btn-platzi:hover{
+  background-color:var(--darkerColor);
+  color: white;
+}
+
+.flexible-video{
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: url(../images/image1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  
+}
+.youtube-video {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.bg-main {
+  background: var(--darkerColor);
+}
+
+#place-time  {
+ background: #343a40;
+ color: white;
+}
+#place-time img {
+  max-width: 100%;
+}
+
+.titulo-instalaciones{
+  color: var(--mainColor);
+  font-weight: 300; 
+}
+
+
+
+#footer {
+  background: linear-gradient(90deg,var(--mainColor), var(--darkerColor));
+}
+#footer a {
+  color:white;
+}
+
