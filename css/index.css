@@ -16,6 +16,7 @@ body {
   width: 5em;
 }
 
+
 #main .carousel-inner .videoHTML {
   max-height: 80vh;
   object-fit: cover;
@@ -28,17 +29,23 @@ body {
   overflow:hidden;
 }
 
-/* .videoHTML {
-  z-index: 1;
+.main-title {
+  color: var(--mainColor);
+  font-weight: 300;
+}
+
+.videoHTML {
+  /* z-index: 1;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   width: 100%;
-  height:100%;
+  height:100%; */
+  background: url(../images/image2.jpg);
 
-} */
+}
 
 .videoHTML-item {
   width: 100%;
@@ -62,12 +69,12 @@ body {
   height: 100%;
 }
 
-.btn-platzi{
+.btn-mainColor{
   background-color: var(--darkColor);
   color: white;
 }
 
-.btn-platzi:hover{
+.btn-mainColor:hover{
   background-color:var(--darkerColor);
   color: white;
 }
@@ -76,7 +83,7 @@ body {
   width: 100%;
   height: 0;
   padding-top: 56.25%;
-  background: url(../images/image1.jpg);
+  background: url(../image/image1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -97,13 +104,14 @@ body {
   background: var(--darkerColor);
 }
 
-#place-time  {
+#instalaciones  {
  background: #343a40;
  color: white;
 }
-#place-time img {
+
+/* #place-time img {
   max-width: 100%;
-}
+} */
 
 .titulo-instalaciones{
   color: var(--mainColor);
