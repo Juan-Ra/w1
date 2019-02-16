@@ -2,68 +2,22 @@
   --mainColor: #00cdcd;
   --darkColor: #00b3b3;
   --darkerColor:  #037777;
-  --lightColor: rgb(243, 243, 242);
+  --lightColor: rgb(253, 253, 253);
+
+  --grisClaro: #f8f8f8;
+  --grisMedio: #929292;
+  --grisOscuro: #474747;
+  --grisNegro:  #272727;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--lightColor);
 }
-.text-platzi {
-  color: var(--mainColor)!important;
-}
 
-#header img {
-  width: 5em;
-}
-
-
-#main .carousel-inner .videoHTML {
-  max-height: 80vh;
-  object-fit: cover;
-  /* filter: brightness(10%); */
-}
-
-
-#carousel{
-  position: relative;
-  overflow:hidden;
-}
-
-.main-title {
-  color: var(--mainColor);
-  font-weight: 300;
-}
-
-.videoHTML {
-  /* z-index: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height:100%; */
-}
-
-.videoHTML-item {
-  width: 100%;
-  height: auto;
-}
-
-#carousel .overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  z-index: 2;
-}
-
-#carousel .overlay .container, #carousel .overlay .row {
-  height: 100%;
-}
+/* //////////////// BOTONES //////////////// */
 
 .btn-mainColor{
   background-color: var(--darkColor);
@@ -75,12 +29,115 @@ body {
   color: white;
 }
 
+/* //////////////// SECCION GENERICA //////////////// */
+
+.section {
+  padding: 6em 0;
+}
+
+.section:nth-child(even){
+  background: var(--grisClaro);
+}
+
+.section-header{
+  text-align: center;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: var(--grisOscuro);
+}
+
+
+
+/*--------------------------------------------------------------------------
+    HEADER
+----------------------------------------------------------------------------*/
+
+.main-header{
+/*   position: absolute;
+  left: 0;
+  right: 0;
+  top: 0; */
+  z-index: 100;
+  transition: .3s;
+}
+
+.scroll-sticky{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: var(--darkerColor);
+}
+
+#header img {
+  width: 5em;
+}
+
+.navbar-collapse {
+  transition: .3s;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+  color: var(--mainColor) !important;
+}
+
+/*--------------------------------------------------------------------------
+  HERO
+----------------------------------------------------------------------------*/
+
+
+#main {
+  max-height: 800px;
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  background-image: url(../images/image2.jpg);
+  background-size: cover;
+}
+
+/* #main .videoHTML {
+width: 100%;
+height: auto;
+} */
+
+.videoHTML-item {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 2;
+}
+
+.overlay .container, .overlay .row {
+  height: 100%;
+}
+
+
+.main-title {
+  color: var(--mainColor);
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------------------
+  LA MARCA
+----------------------------------------------------------------------------*/
 
 .flexible-video{
   width: 100%;
   height: 0;
   padding-top: 56.25%;
-  background: url(../image/image1.jpg);
+  background: url(../images/image1.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -96,35 +153,39 @@ body {
   top: 0;
   bottom: 0;
 }
+/*--------------------------------------------------------------------------
+  VISITANOS
+----------------------------------------------------------------------------*/
 
-.bg-main {
-  background: var(--darkerColor);
-}
 
-#servicios img{
-  max-width: 100%;
-}
 
-#instalaciones  {
+#visitanos  {
  background: #343a40;
  color: white;
 }
-
-/* #place-time img {
-  max-width: 100%;
-} */
 
 .titulo-instalaciones{
   color: var(--mainColor);
   font-weight: 300; 
 }
 
+/*--------------------------------------------------------------------------
+  FOOTER
+----------------------------------------------------------------------------*/
 
 
-#footer {
-  background: linear-gradient(90deg,var(--mainColor), var(--darkerColor));
+.footer-item{
+  margin: 10px 0;
 }
+
+
 #footer a {
-  color:white;
+  color:rgba(255, 255, 255, .5);
+}
+
+
+#footer a:hover, #footer a:focus, #footer a.active {
+  text-decoration: none;
+  color: var(--mainColor);
 }
 

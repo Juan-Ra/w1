@@ -8,13 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <title>Array</title>
   </head>
 
   <body data-spy="scroll" data-target="#navbar" data-offset="66">
 
     <!-- HEADER -->
-    <header id="header" class="sticky-top">
+    <header id="header" class="main-header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo Platzi"></a>
@@ -30,16 +31,16 @@
                   <a class="nav-link" href="#laMarca">La Marca</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
               </li>  
               <li class="nav-item">
                   <a class="nav-link" href="#quienesSomos">Quiénes somos</a>
               </li>  
               <li class="nav-item">
-                  <a class="nav-link" href="#Contacto">Contáctanos</a>
+                  <a class="nav-link" href="#visitanos">Visitanos</a>
               </li>  
               <li class="nav-item">
-                  <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalLLamada">Nosotros te llamamos</a>
+                  <a class="nav-link" href="#contacto">Contáctanos</a>
               </li>  
             </ul>
           </div>
@@ -49,27 +50,19 @@
     <!-- /HEADER -->
 
     <!-- Main -->
-    <main id="main">
-      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="videoHTML">
-              <video class="videoHTML-item"  autoplay muted loop>
-                <source src="images\2.webm">
-                <source src="images\3.mp4">
-              </video>
-            </div>
-          </div>
-          <div class="overlay">
-            <div class="container ">
-              <div class="row align-items-center">
-                <div class="col-md-7 offset-md-5 text-center text-md-right">
-                  <h1 class="main-title ">Lorem Ipsum Dolor</h1>
-                  <p class="d-none d-md-block">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                  <button type="button" class="btn btn-outline-light mt-3"  data-toggle="modal" data-target="#modalLLamada">Nosotros te llamamos</button>
-                  <a class="btn btn-mainColor  mt-3" href="#contacto">Contactar</a>
-                </div>
-              </div>
+    <main id="main">         
+      <video class="videoHTML-item"  autoplay muted loop>
+        <source src="images\2.webm">
+        <source src="images\3.mp4">
+      </video>
+      <div class="overlay">
+        <div class="container ">
+          <div class="row align-items-center">
+            <div class="col-lg-7 offset-lg-5 text-center text-lg-right">
+              <h1 class="main-title ">Lorem Ipsum Dolor</h1>
+              <p class="d-none d-lg-block">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+              <button type="button" class="btn btn-outline-light mt-3"  data-toggle="modal" data-target="#modalLLamada">Nosotros te llamamos</button>
+              <a class="btn btn-mainColor  mt-3" href="#contacto">Contactar</a>
             </div>
           </div>
         </div>
@@ -77,184 +70,190 @@
     </main>
     <!-- /Main -->
 
-    <!-- LaMarca -->
-    <section id="laMarca" class="mt-5 mb-5 pt-5 pb-5">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center text-uppercase">
-            <h2>La Marca</h2>
+    <!-- La Marca --> 
+    <section id="laMarca" class="section">
+      <div class="container">       
+        <div class="section-header">
+          <h2 class="section-title">La Marca</h2>
+        </div>       
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mt-5 ">
+            <div class="card bg-light border-light">
+              <div class="flexible-video card-img-top">
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/SV5V-4DE89A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md font-weight-bold">Lorem Ipsum</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-5">
+            <div class="card bg-light border-light">
+              <div class="flexible-video card-img-top">
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/SV5V-4DE89A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md font-weight-bold">Lorem Ipsum</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-5">
+            <div class="card bg-light border-light">
+              <div class="flexible-video card-img-top">
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/cI9u9R1pRNM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md font-weight-bold">Lorem Ipsum</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- /La Marca --> 
+
+    <!-- Servicios -->
+    <section id="servicios" class=" section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Servicios</h2>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-8 offset-2 col-lg-4 offset-lg-0 px-5 ">
+            <img class="w-50" src="images/servicios1.png" alt="iconos de los servicios">
+          </div>
+          <div class="col-12 text-center col-lg-8 text-lg-left mt-3 mt-lg-0">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5 ">
+            <div class="card bg-light border-light align-items-center pt-3">
+              <img class="card-img-top w-25 w-md-50" src="images/servicios5.png" alt="iconos de los servicios">
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md">Título Servicio</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>             
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5 ">
+            <div class="card bg-light border-light align-items-center pt-3">
+              <img class="card-img-top w-25 w-md-50" src="images/servicios2.png" alt="iconos de los servicios">
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md">Título Servicio</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>             
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5 ">
+            <div class="card bg-light border-light align-items-center pt-3">
+              <img class="card-img-top w-25 w-md-50" src="images/servicios3.png" alt="iconos de los servicios">
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md">Título Servicio</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>             
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5 ">
+            <div class="card bg-light border-light align-items-center pt-3">
+              <img class="card-img-top w-25 w-md-50" src="images/servicios4.png" alt="iconos de los servicios">
+              <div class="card-body text-center">
+                <h5 class="card-title second-title txt-md">Título Servicio</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+              </div>
+            </div>             
+          </div>                  
+        </div>
+      </div>
+    </section>
+    <!-- /Servicios -->
+
+    <!-- Quienes Somos -->
+    <section id="quienesSomos" class="section">
+      <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Quiénes somos</h2>
+        </div>
         <div class="row">
-          <div class="col-12 col-lg-8 mb-4">
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5">
+            <div class="card  bg-light">
+              <img src="speakers\t1.jpg" class="card-img-top" alt="imagen">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge badge-warning">JavaScript</span>     
+                </div>
+                <h5 class="card-title">Jon Costa Martín</h5>
+                <p class="card-text">Et harum quidem <abbr data-toggle="tooltip" title="Lorem ipsum dolor">quidem</abbr> rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5">
+            <div class="card  bg-light">
+              <img src="speakers\t2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge badge-info">JavaScript</span>     
+                </div>
+                <h5 class="card-title">Nora Rodriguez Flores</h5>
+                <p class="card-text">Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5">
+            <div class="card  bg-light">
+              <img src="speakers\t3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge badge-success">JavaScript</span>     
+                </div>    
+                <h5 class="card-title">Biel Flores Reyes</h5>
+                <p class="card-text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5">
+            <div class="card  bg-light">
+              <img src="speakers\t4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="badges mb-2">
+                  <span class="badge badge-danger">JavaScript</span>     
+                </div>
+                <h5 class="card-title">Noa Santos Cano</h5>
+                <p class="card-text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Quienes somos -->
+
+    <!-- Instalaciones -->
+    <section id="visitanos" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-7 pl-0 pr-0">
             <div class="flexible-video ">
                 <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/G3BhbfhAbLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
             </div>
           </div>
-          <div class="col-12 col-lg-4 mb-4">
-              <h2>Lorem Ipsum Dolor</h2>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <a class="btn btn-mainColor" href="#contacto">Contactar</a>
-          </div>
-          <div class="col-12 col-lg-4 mb-4">
-            <div class="flexible-video ">
-                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/daKLa8AojbE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 mb-4">
-              <div class="flexible-video ">
-                  <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/SV5V-4DE89A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 mb-4">
-                <div class="flexible-video ">
-                    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/cI9u9R1pRNM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-                </div>
-              </div>      
-          </div>
-        </div>
-    </section>
-    <!-- /LaMarca -->
-
-    <!-- Servicios -->
-      <section id="servicios" class=" mb-5 pb-5">
-        <div class="container">
-          <div class="row mb-4">
-            <div class="col text-center text-uppercase">
-              <h2>Servicios</h2>
-            </div>
-          </div>
-          <div class="row mb-5 mb-lg-0">
-            <div class="col-8 offset-2 col-lg-5 mb-5 offset-lg-0">
-              <img src="images/servicios1.png" alt="iconos de los servicios">
-            </div>
-            <div class="col-12 text-center col-lg-7 text-lg-left">
-              <h2>Lorem Ipsum Dolor</h2>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-            </div>
-          </div>
-          <div class="row mb-5 mb-lg-0">
-            <div class="col-6 offset-3 col-lg-3 mb-5 offset-lg-0">
-              <img src="images/servicios5.png" alt="iconos de los servicios">
-            </div>
-            <div class="col-12 text-center col-lg-9 text-lg-left">
-              <h2>Servicio 1</h2>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <a class="btn btn-mainColor" href="#contacto">Contactar</a>
-            </div>
-          </div>
-          <div class="row mb-5 mb-lg-0">
-            <div class="col-6 offset-3 col-lg-3 mb-5 offset-lg-0">
-              <img src="images/servicios3.png" alt="iconos de los servicios">
-            </div>
-            <div class="col-12 text-center col-lg-9 text-lg-left">
-              <h2>Servicio 2</h2>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <a class="btn btn-mainColor" href="#contacto">Contactar</a>
-            </div>
-          </div>
-          <div class="row mb-5 mb-lg-0">
-            <div class="col-6 offset-3 col-lg-3 mb-5 offset-lg-0">
-              <img src="images/servicios4.png" alt="iconos de los servicios">
-            </div>
-            <div class="col-12 text-center col-lg-9 text-lg-left">
-              <h2>Servicio 3</h2>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <a class="btn btn-mainColor" href="#contacto">Contactar</a>
-            </div>
-          </div>
-          <div class="row mb-5 mb-lg-0">
-            <div class="col-6 offset-3 col-lg-3 mb-5 offset-lg-0">
-              <img src="images/servicios2.png" alt="iconos de los servicios">
-            </div>
-            <div class="col-12 text-center col-lg-9 text-lg-left">
-              <h2>Servicio 4</h2>
-              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <a class="btn btn-mainColor" href="#contacto">Contactar</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- /Servicios -->
-
-    <!-- Quienes Somos -->
-    <section id="quienesSomos" class="mt-5 mb-5 pt-6 pb-5">
-        <div class="container">
-          <div class="row mb-4">
-            <div class="col text-center text-uppercase">
-              <h2>Quiénes Somos</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card text-white bg-main">
-                <img src="speakers\sacha.jpg" class="card-img-top" alt="imagen">
-                <div class="card-body">
-                  <div class="badges mb-2">
-                    <span class="badge badge-warning">JavaScript</span>     
-                  </div>
-                  <h5 class="card-title">Sasha Lifszyc</h5>
-                  <p class="card-text">Et harum quidem <abbr data-toggle="tooltip" title="Lorem ipsum dolor">quidem</abbr> rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card text-white bg-main">
-                <img src="speakers\cvander.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <div class="badges mb-2">
-                    <span class="badge badge-info">JavaScript</span>     
-                  </div>
-                  <h5 class="card-title">Christian Vander H.</h5>
-                  <p class="card-text">Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card text-white bg-main">
-                <img src="speakers\freddy.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <div class="badges mb-2">
-                    <span class="badge badge-success">JavaScript</span>     
-                  </div>    
-                  <h5 class="card-title">Freddy Vega</h5>
-                  <p class="card-text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card text-white bg-main">
-                <img src="speakers\leonidas2.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <div class="badges mb-2">
-                    <span class="badge badge-danger">JavaScript</span>     
-                  </div>
-                  <h5 class="card-title">Leonidas Esteban</h5>
-                  <p class="card-text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempores.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Quienes somos -->
-
-    <!-- Instalaciones -->
-    <section id="instalaciones" class="mt-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-7 pl-0 pr-0">
-              <div class="flexible-video ">
-                  <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/G3BhbfhAbLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-              </div>
-          </div>
-          <div class="col-12 col-lg-5 pt-3 pb-3 pl-4 pr-4">
-            <h2 class="mb-5 titulo-instalaciones">Visita nuestras instalaciones</h2>
+          <div class="col-12 col-lg-5 pt-5 pb-3 pl-4 pr-4">
+            <h2 class="titulo-instalaciones">Visita nuestras instalaciones</h2>
             <h4 >Lorem Ipsum Dolor</h4>
             <p>Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus.</p>
             <a href="#" class="btn btn-outline-light btn-sm">Ver mapa</a>
-         
           </div>
         </div>
       </div>
@@ -262,14 +261,12 @@
     <!-- /Lugar y Fecha -->
 
     <!-- Contacto -->
-    <section id="contacto" class="pt-4 pb-4 mt-5 mb-5">
+    <section id="contacto" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col text-uppercase text-center">
-            <h2>Contáctanos</h2>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Contacto</h2>
         </div>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col text-center">
             Lorem ipsum dolor sit amet <abbr data-toggle="tooltip" title="Nam libero tempore">consecteur</abbr>.
             adisciplin ellit seud do malevit.
@@ -305,28 +302,28 @@
     <!-- /Contacto -->
 
     <!-- FOOTER -->
-    <footer id="footer" class="pb-4 pt-4">
+    <footer id="footer" class="pb-4 pt-4 bg-dark">
       <div class="container" >
         <div class="row text-center">
-          <div class="col-12 col-lg">
-            <a href="#">Inicio</a>
+          <div class="footer-item col-12 col-lg">
+            <a href="#main">Inicio</a>
           </div>
-          <div class="col-12 col-lg">
-            <a href="#">La Marca</a>
+          <div class="footer-item col-12 col-lg">
+            <a href="#laMarca">La Marca</a>
           </div>
-          <div class="col-12 col-lg">
-            <a href="#">Servicios</a>
+          <div class="footer-item col-12 col-lg">
+            <a href="#servicios">Servicios</a>
           </div>
-          <div class="col-12 col-lg">
-            <a href="#">Quiénes somos</a>
+          <div class="footer-item col-12 col-lg">
+            <a href="#quienesSomos">Quiénes somos</a>
           </div>
-          <div class="col-12 col-lg">
-            <a href="#">Contáctanos</a>
+          <div class="footer-item col-12 col-lg">
+            <a href="#contacto">Contáctanos</a>
           </div>
-          <div class="col-12 col-lg">
+          <div class="footer-item col-12 col-lg">
             <a href="#">Términos y condiciones</a>
           </div>
-          <div class="col-12 col-lg">
+          <div class="footer-item col-12 col-lg">
             <a href="#">Privacidad</a>
           </div>
         </div>
@@ -354,12 +351,11 @@
                   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group col-12 mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">@</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Teléfono" aria-label="Username" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
                   </div>
-                
+                  <input type="text" class="form-control" placeholder="Teléfono" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
               </div>
             </form>
             <div class="alert alert-warning" role="alert">
